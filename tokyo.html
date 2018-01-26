@@ -1,22 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Tuturu</title>
-    
-    <script src="./audiojs/audio.min.js"></script>
-    <link rel="stylesheet" href="./includes/index.css" media="screen">
-    <script>
-      audiojs.events.ready(function() {
-        audiojs.createAll();
-      });
-    </script>
-  </head>
-  <body>
-    
-      <h1>Tuturu.com</h1>
-      <h2>Where you listen to Anime</h2>
-      Tolyo Ghoul - Unravel
-    <audio src="01 - unravel.mp3" preload="auto" />
-    </body>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tuturuu</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="column add-bottom">
+        <div id="mainwrap">
+            <div id="nowPlay">
+                <span class="left" id="npAction">Paused...</span>
+                <span class="right" id="npTitle"></span>
+            </div>
+            <div id="audiowrap">
+                <div id="audio0">
+                    <audio preload id="audio1" controls="controls">Your browser does not support HTML5 Audio!</audio>
+                </div>
+                <div id="tracks">
+                    <a id="btnPrev">&larr;</a>
+                    <a id="btnNext">&rarr;</a>
+                </div>
+            </div>
+            <div id="plwrap">
+                <ul id="plList"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="column add-bottom center">
+        <p>Made by <a href="https://github.com/MustangNM">Mustang</a></p>
+    </div>
+</div>
+
+<script src="js/jquery.js" ></script>
+<script src="js/main.js"></script>
+</body>
 </html>
