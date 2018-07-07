@@ -30,7 +30,8 @@ padding:1rem 0;
 ================================================== */
 
 .container { position:relative; margin:0 auto; max-width:800px; width:100%; }
-.column { width:inherit; }
+.column { 
+    width: inherit; }
 
 
 /* Typography / Links
